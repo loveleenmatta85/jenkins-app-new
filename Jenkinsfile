@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        cleanWs()
+        
         stage('Build NPM App') {
             agent {
 
@@ -12,6 +12,7 @@ pipeline {
                 }
             }
             steps {
+                cleanWs()
                 sh '''
                     ls -la
                     node --version
