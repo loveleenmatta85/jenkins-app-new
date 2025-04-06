@@ -27,21 +27,20 @@ pipeline {
             }
         }
         stage('Testing the Npm application') {
-            agent {
+/*            agent {
 
                 docker {
                     image 'node:current-bullseye-slim'
                     reuseNode true
                 }
             }
+*/ 
             steps {
                 
                 sh '''
-                    test -e build/index.html
+                    test -f build/index.html
                     node --version
                     npm --version
-                    npm ci
-                    npm run build
                     npm test
                     echo "Testing the NPM application is successful"
 
