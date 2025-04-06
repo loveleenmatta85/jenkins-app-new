@@ -48,5 +48,20 @@ pipeline {
                 '''
             }
         }
+    post {
+        always {
+            
+            junit 'test-results/*.xml'
+        }
+    }
+        success {
+            echo "Build and Test stages completed successfully"
+        }
+        failure {
+            echo "Build or Test stage failed"
+        }
+    }  
+
+
     }
 }
