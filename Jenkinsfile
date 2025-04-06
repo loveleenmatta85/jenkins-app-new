@@ -17,7 +17,7 @@ pipeline {
                     ls -ltra
                     node --version
                     npm --version
-                    sudo npm install
+                    npm install
                                        
                 '''
             }
