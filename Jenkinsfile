@@ -27,14 +27,14 @@ pipeline {
             }
         }
         stage('Testing the Npm application') {
-/*            agent {
+              agent {
 
                 docker {
                     image 'node:current-bullseye-slim'
                     reuseNode true
                 }
             }
-*/ 
+ 
             steps {
                 
                 sh '''
