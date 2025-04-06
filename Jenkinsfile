@@ -7,7 +7,7 @@ pipeline {
             agent {
 
                 docker {
-                    image 'node:18-alpine'
+                    image 'node:current-bullseye-slim'
                     reuseNode true
                 }
             }
@@ -17,7 +17,7 @@ pipeline {
                     ls -ltra
                     node --version
                     npm --version
-                     exec su-exec npm ci 
+                    npm install
                                        
                 '''
             }
