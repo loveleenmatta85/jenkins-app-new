@@ -15,6 +15,9 @@ pipeline {
                 
                 sh '''
                     ls -ltra
+                    node --version
+                    npm --version
+
 
                     
                 '''
