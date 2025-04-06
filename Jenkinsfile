@@ -17,9 +17,8 @@ pipeline {
                     ls -ltra
                     node --version
                     npm --version
-
-
-                    
+                    npm ci
+                   
                 '''
             }
         }
