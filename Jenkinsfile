@@ -17,9 +17,8 @@ pipeline {
                     ls -ltra
                     node --version
                     npm --version
-                    npm ci
-                    sudo chown -R 995:991 "/.npm"
-                   
+                    sudo npm ci
+                                       
                 '''
             }
         }
