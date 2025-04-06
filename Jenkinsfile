@@ -17,7 +17,7 @@ pipeline {
                     ls -ltra
                     node --version
                     npm --version
-                     exec su-exec npm ci
+                     exec su-exec npm ci 
                                        
                 '''
             }
