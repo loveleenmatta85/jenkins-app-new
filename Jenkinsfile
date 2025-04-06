@@ -20,6 +20,8 @@ pipeline {
                     node --version
                     npm --version
                     npm install
+                    npm ci
+                    npm run build
                                        
                 '''
             }
